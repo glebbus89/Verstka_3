@@ -1,0 +1,6 @@
+@mixin font($color){
+    font-size:14px;
+    font-weight:600;
+    line-height: 17px;
+    color:$color;
+}

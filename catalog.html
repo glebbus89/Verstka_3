@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,29 +20,187 @@
                 <a href="#"> <img src="./img/img_header_left_2.svg" alt="img_header_left_2"></a>
             </div>
             <div class="header_right">
-                <a href="#"><img src="./img/img_header_right_1.svg" alt="img_header_right_1"></a>
-                <a href="#"><img class="img_header_right_2_3" src="./img/img_header_right_2.svg"
+                <input id="check" type="checkbox">
+                <label for="check"><img class="img_header_right_2_3" src="./img/img_header_right_1.svg"
+                        alt="img_header_right_1"></label>
+                <div class="menu">
+                    <h2 class="menu__heading">MENU</h2>
+                    <h3 class="menu__subheading">MAN</h3>
+                    <ul class="menu__ul">
+                        <li><a class="menu__link" href="#">Accessories</a></li>
+                        <li><a class="menu__link" href="#">Bags</a></li>
+                        <li><a class="menu__link" href="#">Denim</a></li>
+                        <li><a class="menu__link" href="#">T-Shirts</a></li>
+                    </ul>
+                    <h3 class="menu__subheading">WOMAN</h3>
+                    <ul class="menu__ul">
+                        <li><a class="menu__link" href="#">Accessories</a></li>
+                        <li><a class="menu__link" href="#">Jackets & Coats</a></li>
+                        <li><a class="menu__link" href="#">Polos</a></li>
+                        <li><a class="menu__link" href="#">T-Shirts</a></li>
+                        <li><a class="menu__link" href="#">Shirts</a></li>
+                    </ul>
+                    <h3 class="menu__subheading">KIDS</h3>
+                    <ul class="menu__ul">
+                        <li><a class="menu__link" href="#">Accessories</a></li>
+                        <li><a class="menu__link" href="#">Jackets & Coats</a></li>
+                        <li><a class="menu__link" href="#">Polos</a></li>
+                        <li><a class="menu__link" href="#">T-Shirts</a></li>
+                        <li><a class="menu__link" href="#">Shirts</a></li>
+                        <li><a class="menu__link" href="#">Bags</a></li>
+                    </ul>
+
+                </div>
+                <a href="index.html"><img class="img_header_right_2_3" src="./img/img_header_right_2.svg"
                         alt="img_header_right_2"></a>
                 <a href="#"><img class="img_header_right_2_3" src="./img/img_header_right_3.svg"
-                        alt="img_header_right_3"></a>
+                        alt="img_header_right_2_3"></a>
             </div>
         </div>
         <div class="top_head center">
             <div class="top_head_left">
                 <h2 class="top_head_heading">NEW ARRIVALS </h2>
             </div>
-            <nav class="breadcrumbs">
-                <a href="#" class="breadcrumbs__link">HOME</a>
-                <a href="#" class="breadcrumbs__link">MAN</a>
-                <a href="#" class="breadcrumbs__link breadcrumbs__link_site">NEW ARRIVALS</a>
+            <nav class="top_head_breadcrumbs">
+                <a href="#" class="top_head_breadcrumbs__link">HOME</a>
+                <a href="#" class="top_head_breadcrumbs__link">MAN</a>
+                <a href="#" class="top_head_breadcrumbs__link top_head_breadcrumbs__link_site">NEW ARRIVALS</a>
             </nav>
+        </div>
+        <div class="sort center">
+            <details class="filter">
+                <summary class="filter__summary"><span class="filter__heading">FILTER</span><svg width="15.000000"
+                        height="10.000000" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs />
+                        <path id="Vector"
+                            d="M0.83 10L4.16 10C4.62 10 5 9.62 5 9.16C5 8.7 4.62 8.33 4.16 8.33L0.83 8.33C0.37 8.33 0 8.7 0 9.16C0 9.62 0.37 10 0.83 10ZM0 0.83C0 1.29 0.37 1.66 0.83 1.66L14.16 1.66C14.62 1.66 15 1.29 15 0.83C15 0.37 14.62 0 14.16 0L0.83 0C0.37 0 0 0.37 0 0.83ZM0.83 5.83L9.16 5.83C9.62 5.83 10 5.45 10 5C10 4.54 9.62 4.16 9.16 4.16L0.83 4.16C0.37 4.16 0 4.54 0 5C0 5.45 0.37 5.83 0.83 5.83Z"
+                            fill="#000000" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </summary>
+                <div class="filter__content">
+                    <details open class="filter__item">
+                        <summary class="filter__head">CATEGORY</summary>
+                        <div class="filter__link_box">
+                            <a href="#" class="filter__link">Accessories</a>
+                            <a href="#" class="filter__link">Bags</a>
+                            <a href="#" class="filter__link">Denim</a>
+                            <a href="#" class="filter__link">Hoodies & Sweatshirts</a>
+                            <a href="#" class="filter__link">Jackets & Coats</a>
+                            <a href="#" class="filter__link">Polos</a>
+                            <a href="#" class="filter__link">Shirts</a>
+                            <a href="#" class="filter__link">Shoes</a>
+                            <a href="#" class="filter__link">Sweaters & Knits</a>
+                            <a href="#" class="filter__link">T-Shirts</a>
+                            <a href="#" class="filter__link">Tanks</a>
+                        </div>
+                    </details>
+                    <details class="filter__item">
+                        <summary class="filter__head">BRAND</summary>
+                        <div class="filter__link_box">
+                            <a href="#" class="filter__link">Accessories</a>
+                            <a href="#" class="filter__link">Bags</a>
+                            <a href="#" class="filter__link">Denim</a>
+                            <a href="#" class="filter__link">Hoodies & Sweatshirts</a>
+                            <a href="#" class="filter__link">Jackets & Coats</a>
+                            <a href="#" class="filter__link">Polos</a>
+                            <a href="#" class="filter__link">Shirts</a>
+                            <a href="#" class="filter__link">Shoes</a>
+                            <a href="#" class="filter__link">Sweaters & Knits</a>
+                            <a href="#" class="filter__link">T-Shirts</a>
+                            <a href="#" class="filter__link">Tanks</a>
+                        </div>
+                    </details>
+                    <details class="filter__item">
+                        <summary class="filter__head">DESIGNER</summary>
+                        <div class="filter__link_box">
+                            <a href="#" class="filter__link">Accessories</a>
+                            <a href="#" class="filter__link">Bags</a>
+                            <a href="#" class="filter__link">Denim</a>
+                            <a href="#" class="filter__link">Hoodies & Sweatshirts</a>
+                            <a href="#" class="filter__link">Jackets & Coats</a>
+                            <a href="#" class="filter__link">Polos</a>
+                            <a href="#" class="filter__link">Shirts</a>
+                            <a href="#" class="filter__link">Shoes</a>
+                            <a href="#" class="filter__link">Sweaters & Knits</a>
+                            <a href="#" class="filter__link">T-Shirts</a>
+                            <a href="#" class="filter__link">Tanks</a>
+                        </div>
+                    </details>
+                </div>
+            </details>
+            <div class="sort__details">
+                <details class="details">
+                    <summary class="details__title"><span>TRENDING NOW</span><svg class="details__svg" width="10.020004"
+                            height="5.003906" viewBox="0 0 10.02 5.00391" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs />
+                            <path id="Vector"
+                                d="M5 5C4.83 5 4.67 4.94 4.54 4.83L0.25 1.26C0.11 1.14 0.02 0.96 0 0.78C-0.02 0.59 0.04 0.4 0.16 0.25C0.28 0.11 0.46 0.02 0.64 0C0.83 -0.02 1.02 0.04 1.17 0.16L5 3.36L8.83 0.27C8.9 0.22 8.98 0.17 9.07 0.14C9.16 0.12 9.26 0.11 9.35 0.12C9.45 0.13 9.54 0.16 9.62 0.2C9.7 0.25 9.78 0.31 9.83 0.38C9.9 0.46 9.95 0.54 9.98 0.63C10.01 0.73 10.02 0.83 10.01 0.93C10 1.02 9.97 1.12 9.93 1.2C9.88 1.29 9.81 1.37 9.73 1.42L5.45 4.88C5.32 4.97 5.16 5.01 5 5Z"
+                                fill="#6F6E6E" fill-opacity="1.000000" fill-rule="nonzero" />
+                        </svg>
+                    </summary>
+                </details>
+                <details class="details">
+                    <summary class="details__title"> <span>SIZE</span><svg class="details__svg" width="10.020004"
+                            height="5.003906" viewBox="0 0 10.02 5.00391" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs />
+                            <path id="Vector"
+                                d="M5 5C4.83 5 4.67 4.94 4.54 4.83L0.25 1.26C0.11 1.14 0.02 0.96 0 0.78C-0.02 0.59 0.04 0.4 0.16 0.25C0.28 0.11 0.46 0.02 0.64 0C0.83 -0.02 1.02 0.04 1.17 0.16L5 3.36L8.83 0.27C8.9 0.22 8.98 0.17 9.07 0.14C9.16 0.12 9.26 0.11 9.35 0.12C9.45 0.13 9.54 0.16 9.62 0.2C9.7 0.25 9.78 0.31 9.83 0.38C9.9 0.46 9.95 0.54 9.98 0.63C10.01 0.73 10.02 0.83 10.01 0.93C10 1.02 9.97 1.12 9.93 1.2C9.88 1.29 9.81 1.37 9.73 1.42L5.45 4.88C5.32 4.97 5.16 5.01 5 5Z"
+                                fill="#6F6E6E" fill-opacity="1.000000" fill-rule="nonzero" />
+                        </svg></summary>
+                    <div class="details__box">
+                        <div class="details__check">
+                            <input id="details__check1" type="checkbox">
+                            <label for="details__check1">XS</label>
+                        </div>
+                        <div class="details__check">
+                            <input id="details__check2" type="checkbox">
+                            <label for="details__check2">S</label>
+                        </div>
+                        <div class="details__check">
+                            <input id="details__check3" type="checkbox">
+                            <label for="details__check3">M</label>
+                        </div>
+                        <div class="details__check">
+                            <input id="details__check4" type="checkbox">
+                            <label for="details__check4">L</label>
+                        </div>
+                    </div>
+                </details>
+                <details class="details">
+                    <summary class="details__title"><span>PRICE</span><svg class="details__svg" width="10.020004"
+                            height="5.003906" viewBox="0 0 10.02 5.00391" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs />
+                            <path id="Vector"
+                                d="M5 5C4.83 5 4.67 4.94 4.54 4.83L0.25 1.26C0.11 1.14 0.02 0.96 0 0.78C-0.02 0.59 0.04 0.4 0.16 0.25C0.28 0.11 0.46 0.02 0.64 0C0.83 -0.02 1.02 0.04 1.17 0.16L5 3.36L8.83 0.27C8.9 0.22 8.98 0.17 9.07 0.14C9.16 0.12 9.26 0.11 9.35 0.12C9.45 0.13 9.54 0.16 9.62 0.2C9.7 0.25 9.78 0.31 9.83 0.38C9.9 0.46 9.95 0.54 9.98 0.63C10.01 0.73 10.02 0.83 10.01 0.93C10 1.02 9.97 1.12 9.93 1.2C9.88 1.29 9.81 1.37 9.73 1.42L5.45 4.88C5.32 4.97 5.16 5.01 5 5Z"
+                                fill="#6F6E6E" fill-opacity="1.000000" fill-rule="nonzero" />
+                        </svg></summary>
+                </details>
+            </div>
         </div>
         <div class="products_content center">
             <div class="products_box_content center">
                 <div class="products">
                     <img class="product__img" src="img/products_img_1.svg" alt="products_img_1">
                     <div class="products_text">
-                        <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        <a href="#">
+                            <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        </a>
                         <p class="products_box_text">Known for her sculptural takes on traditional tailoring, Australian
                             arbiter of cool Kym
                             Ellery
@@ -68,7 +227,9 @@
                     <img class="product_img_woman product__img" src="./img/img_catalog/img_catalog_2.svg"
                         alt="img_catalog_2">
                     <div class="products_text">
-                        <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        <a href="#">
+                            <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        </a>
                         <p class="products_box_text">Known for her sculptural takes on traditional tailoring, Australian
                             arbiter of cool Kym
                             Ellery
@@ -94,7 +255,9 @@
                 <div class="products">
                     <img class="product__img" src="./img/products_img_3.svg" alt="products_img_3">
                     <div class="products_text">
-                        <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        <a href="#">
+                            <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        </a>
                         <p class="products_box_text">Known for her sculptural takes on traditional tailoring, Australian
                             arbiter of cool Kym
                             Ellery
@@ -120,7 +283,9 @@
                 <div class="products">
                     <img class="product__img" src="./img/products_img_4.svg" alt="products_img_4">
                     <div class="products_text">
-                        <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        <a href="#">
+                            <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        </a>
                         <p class="products_box_text">Known for her sculptural takes on traditional tailoring, Australian
                             arbiter of cool Kym
                             Ellery
@@ -146,7 +311,9 @@
                 <div class="products">
                     <img class="product__img" src="./img/img_catalog/img_catalog_5.svg" alt="img_catalog">
                     <div class="products_text">
-                        <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        <a href="#">
+                            <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        </a>
                         <p class="products_box_text">Known for her sculptural takes on traditional tailoring, Australian
                             arbiter of cool Kym
                             Ellery
@@ -172,7 +339,9 @@
                 <div class="products">
                     <img class="product__img" src="./img/img_catalog/img_catalog_6.svg" alt="img_catalog_6">
                     <div class="products_text">
-                        <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        <a href="">
+                            <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        </a>
                         <p class="products_box_text">Known for her sculptural takes on traditional tailoring, Australian
                             arbiter of cool Kym
                             Ellery
@@ -198,7 +367,9 @@
                 <div class="products">
                     <img class="product__img" src="./img/img_catalog/img_catalog_7.svg" alt="img_catalog_7">
                     <div class="products_text">
-                        <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        <a href="#">
+                            <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        </a>
                         <p class="products_box_text">Known for her sculptural takes on traditional tailoring, Australian
                             arbiter of cool Kym
                             Ellery
@@ -224,7 +395,9 @@
                 <div class="products">
                     <img class="product__img" src="./img/img_catalog/img_catalog_8.svg" alt="img_catalog_8">
                     <div class="products_text">
-                        <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        <a href="#">
+                            <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        </a>
                         <p class="products_box_text">Known for her sculptural takes on traditional tailoring, Australian
                             arbiter of cool Kym
                             Ellery
@@ -250,7 +423,9 @@
                 <div class="products">
                     <img class="product__img" src="./img/img_catalog/img_catalog_9.svg" alt="img_catalog_9">
                     <div class="products_text">
-                        <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        <a href="">
+                            <h3 class="products_box_subtitle">ELLERY X M'O CAPSULE</h3>
+                        </a>
                         <p class="products_box_text">Known for her sculptural takes on traditional tailoring, Australian
                             arbiter of cool Kym
                             Ellery
@@ -275,25 +450,74 @@
                 </div>
             </div>
         </div>
+        <div class="pagination center">
+            <div class="pagination__box">
+                <div class="pagination__vector__left">
+                    <a href="#"><svg width="8.000000" height="14.000000" viewBox="0 0 8 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs />
+                            <path id="Vector" d="M8 2L3 7L8 12L7 14L0 7L7 0L8 2Z" fill="#000000" fill-opacity="1.000000"
+                                fill-rule="nonzero" />
+                        </svg></a>
+                </div>
+                <div class="pagination__text">
+                    <a href="">
+                        <p class="pagination__number"><span class="pagination__number__one">1</span></p>
+                    </a>
+                    <a href="">
+                        <p class="pagination__number">2</p>
+                    </a>
+                    <a href="">
+                        <p class="pagination__number">3</p>
+                    </a>
+                    <a href="">
+                        <p class="pagination__number">4</p>
+                    </a>
+                    <a href="">
+                        <p class="pagination__number">5</p>
+                    </a>
+                    <a href="">
+                        <p class="pagination__number">6.....20</p>
+                    </a>
+                </div>
+                <div class="pagination__vector__right">
+                    <a href="#"><svg width="8.000000" height="14.000000" viewBox="0 0 8 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs />
+                            <path id="Vector" d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="#000000"
+                                fill-opacity="1.000000" fill-rule="nonzero" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
         <div class="future center">
-            <div class="item">
+            <div class="future__item">
                 <img src="./img/img_future_1.svg" alt="img_future_1">
-                <h3 class="subtitle_future">Free Delivery</h3>
-                <p class="text_future">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                <h3 class="future__subtitle_future">Free Delivery</h3>
+                <p class="future__text_future">Worldwide delivery on all. Authorit tively morph next-generation innov
+                    tion with
                     extensive models.
                 </p>
             </div>
-            <div class="item_1">
+            <div class="future__item_1">
                 <img src="./img/img_future_2.svg" alt="img_future_2">
-                <h3 class="subtitle_future">Sales & discounts</h3>
-                <p class="text_future">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                <h3 class="future__subtitle_future">Sales & discounts</h3>
+                <p class="future__text_future">Worldwide delivery on all. Authorit tively morph next-generation innov
+                    tion with
                     extensive models.
                 </p>
             </div>
-            <div class="item_2">
+            <div class="future__item_2">
                 <img src="./img/img_future_3.svg" alt="img_future_3">
-                <h3 class="subtitle_future">Quality assurance</h3>
-                <p class="text_future">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                <h3 class="future__subtitle_future">Quality assurance</h3>
+                <p class="future__text_future">Worldwide delivery on all. Authorit tively morph next-generation innov
+                    tion with
                     extensive models.
                 </p>
             </div>
@@ -301,13 +525,13 @@
         <div class="subscribe">
             <img class="subscribe_img_background" width="100%" src="img/img_subscribe.svg" alt="img_subscribe">
             <div class="subscribe_item">
-                <div class="subcribe_left">
+                <div class="subscribe_left">
                     <img src="./img/img_subscribe_left.svg" alt="img_subscribe_left">
                     <p class="subscribe_left_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<br> a
                         pulvinar purus condimentum“</p>
                 </div>
                 <div class="subscribe_right">
-                    <div class="subscride_right_text">
+                    <div class="subscribe_right_text">
                         <h3 class="subscribe_right_text_h3">SUBSCRIBE</h3>
                         <h4 class="subscribe_right_text_h4">FOR OUR NEWLETTER AND PROMOTION</h4>
                     </div>
@@ -319,12 +543,6 @@
                                 <button class="subscribe_right_border_item_text_1" type="submit">Subscribe</button>
                             </form>
                         </div>
-                        <!-- <div class="subscribe_right_border_item_1"> -->
-                        <!-- <input class="subscribe_right_border_item_text_1" type="submit" value="Subscribe"> -->
-                        <!-- <form action="#">
-                                <button class="subscribe_right_border_item_text_1" type="submit">Subscribe</button>
-                            </form>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -385,8 +603,6 @@
 
         </div>
     </div>
-
-
 </body>
 
 </html>
