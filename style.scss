@@ -204,12 +204,12 @@ summary {
     z-index: 10;
 
     &__content {
+        box-shadow: 6px 37px 35px 0px rgba(0, 0, 0, 0.21);
         background-color:  rgb(255, 255, 255);
         padding: 0px 16px 16px 16px;
         
         // position: absolute
-       
-    }
+        }
 
     &[open] {
         box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
