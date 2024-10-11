@@ -142,13 +142,26 @@ img {
   font-weight: 400;
   line-height: 29px;
 }
+.top_head_breadcrumbs__ul {
+  list-style-type: none;
+  display: flex;
+}
+.top_head_breadcrumbs__li:not(:last-child)::after {
+  content: "/";
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  color: rgb(99, 99, 99);
+}
 .top_head_breadcrumbs__link {
   color: rgb(99, 99, 99);
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;
 }
-.top_head_breadcrumbs__link_site {
+.top_head_breadcrumbs__li:last-child .top_head_breadcrumbs__link {
   color: rgb(241, 109, 127);
   font-weight: 700;
 }
