@@ -340,6 +340,157 @@ img {
     }
 }
 
+// Стили для странницы Registration
+
+.registration{
+    margin-top:64px;
+    margin-bottom: 96px;
+    display: flex;
+    &_left{
+        
+        &_item{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 34px;
+            &_title{
+                font-weight: 300;
+                font-size: 16px;
+                color: #222;
+            }
+            &_input{
+                margin-top: 20px;
+                width: 360px;
+                font-weight: 300;
+                font-size: 13px;
+                color: #b1b1b1;
+                padding: 13px 0 16px 17px;
+            }
+            &_checkbox{
+                display: flex;
+                align-items: center;
+                margin-top: 31px;
+                &_check{
+                    width: 1.3em;
+                    height: 1.3em;
+                    background-color: white;
+                    border-radius: 50%;
+                    vertical-align: sub;
+                    border: 1px solid #a4a4a4;
+                    appearance: none;
+                    -webkit-appearance: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+                &_check:checked {
+                    background-color: #a4a4a4;
+                    
+                }
+                &_label{
+                    padding-left: 10px;
+                    padding-right: 20px;
+                    font-weight: 400;
+                    font-size: 13px;
+                    color: #000;
+                }
+                &_female{
+                    padding-left: 10px;
+                    font-weight: 400;
+                    font-size: 13px;
+                    color: #000;
+                }
+
+            }
+        }
+        &_details{
+            margin-bottom: 39px;
+            &_title{
+                font-weight: 300;
+                font-size: 16px;
+                color: #222;
+            }
+            &_input{
+                margin-top: 20px;
+                width: 360px;
+                font-weight: 300;
+                font-size: 13px;
+                color: #b1b1b1;
+                padding: 13px 0 16px 17px;
+            }
+            &_text{
+                margin-top: 15px;
+                width: 360px;
+                font-weight: 300;
+                font-size: 13px;
+                color: #b1b1b1;
+            }
+
+        }
+        &_button{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
+            background-color: #f16d7f;
+            border:none;
+            padding: 17px 20px 17px 29px;
+            transition: .3s;
+        }
+        &_button:hover{
+            background-color: purple;
+            color:#fff;
+        }
+    }
+    &_right{
+        &_item{
+            margin-bottom: 21px;
+            &_title{
+                margin-bottom: 22px;
+                font-weight: 300;
+                font-size: 24px;
+                color: #000;
+            }
+            &_text{
+                font-weight: 300;
+                font-size: 24px;
+                color: #000;
+            }
+
+            
+
+        }
+        &_text{
+            &_ul{
+
+            }
+            &_li{
+                display: flex;
+                gap: 22px;
+                list-style-type: none;
+                margin-bottom: 16px;
+                font-weight: 300;
+                font-size: 24px;
+                color: #000;
+            }
+            &_li::before {
+                content: url(./img/img_registration/vector_registration_li.svg);
+                background-repeat:no-repeat;
+                // width: 20px;
+                // height: 16px;
+                // display: block;
+            } 
+        }           
+    }            
+        
+}
+
+
+
+
+
+
 summary {
     display: block;
   }

@@ -318,6 +318,131 @@ img {
   color: #fff;
 }
 
+.registration {
+  margin-top: 64px;
+  margin-bottom: 96px;
+  display: flex;
+}
+.registration_left_item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 34px;
+}
+.registration_left_item_title {
+  font-weight: 300;
+  font-size: 16px;
+  color: #222;
+}
+.registration_left_item_input {
+  margin-top: 20px;
+  width: 360px;
+  font-weight: 300;
+  font-size: 13px;
+  color: #b1b1b1;
+  padding: 13px 0 16px 17px;
+}
+.registration_left_item_checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 31px;
+}
+.registration_left_item_checkbox_check {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: sub;
+  border: 1px solid #a4a4a4;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.registration_left_item_checkbox_check:checked {
+  background-color: #a4a4a4;
+}
+.registration_left_item_checkbox_label {
+  padding-left: 10px;
+  padding-right: 20px;
+  font-weight: 400;
+  font-size: 13px;
+  color: #000;
+}
+.registration_left_item_checkbox_female {
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 13px;
+  color: #000;
+}
+.registration_left_details {
+  margin-bottom: 39px;
+}
+.registration_left_details_title {
+  font-weight: 300;
+  font-size: 16px;
+  color: #222;
+}
+.registration_left_details_input {
+  margin-top: 20px;
+  width: 360px;
+  font-weight: 300;
+  font-size: 13px;
+  color: #b1b1b1;
+  padding: 13px 0 16px 17px;
+}
+.registration_left_details_text {
+  margin-top: 15px;
+  width: 360px;
+  font-weight: 300;
+  font-size: 13px;
+  color: #b1b1b1;
+}
+.registration_left_button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  background-color: #f16d7f;
+  border: none;
+  padding: 17px 20px 17px 29px;
+  transition: 0.3s;
+}
+.registration_left_button:hover {
+  background-color: purple;
+  color: #fff;
+}
+.registration_right_item {
+  margin-bottom: 21px;
+}
+.registration_right_item_title {
+  margin-bottom: 22px;
+  font-weight: 300;
+  font-size: 24px;
+  color: #000;
+}
+.registration_right_item_text {
+  font-weight: 300;
+  font-size: 24px;
+  color: #000;
+}
+.registration_right_text_li {
+  display: flex;
+  gap: 22px;
+  list-style-type: none;
+  margin-bottom: 16px;
+  font-weight: 300;
+  font-size: 24px;
+  color: #000;
+}
+.registration_right_text_li::before {
+  content: url(./img/img_registration/vector_registration_li.svg);
+  background-repeat: no-repeat;
+}
+
 summary {
   display: block;
 }
