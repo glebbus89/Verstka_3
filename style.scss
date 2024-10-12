@@ -32,9 +32,6 @@ img {
     overflow: hidden;
 }
 
-
-
-
 .header {
     min-height: 75px;
     background: rgb(34, 34, 34);
@@ -179,6 +176,168 @@ img {
         font-weight: 700; 
     }
     
+}
+
+
+// Стили для странницы Shopping_cart
+
+.shoping__cart {
+    margin-top: 96px;
+    margin-bottom: 128px;
+    &_wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &_left{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-bottom: 72px;
+        &_item{
+            width: 652px;
+            box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+            display: flex;
+            position: relative;
+        }
+        &_description{
+            padding: 22px 97px 62px 31px;
+            &_title{
+                font-weight: 400;
+                font-size: 24px;
+                color: #222;
+                margin-bottom: 42px;
+                max-width: 200px;
+            }
+            &_list{
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                &_text{
+                    font-weight: 400;
+                    font-size: 22px;
+                    color: #575757;
+                }
+                &_price{
+                    color:#ef5b70;
+                }
+                &_color{
+                    color:#6f6e6e;
+                }
+                &_input{
+                    color:#6f6e6e;
+                    font-weight: 400;
+                    font-size: 18px;
+                    width: 44px;
+                    height: 24px;
+                    text-align: center;
+                    padding-left: 15px;
+                }
+            }
+        }
+        &_delete{
+            position: absolute;
+            top: 28px;
+            right: 22px;
+            background: none;
+            cursor: pointer;
+            border: none;
+        }
+        &_bottom_button{
+            display: flex;
+            justify-content:space-between;
+            &_click{
+                font-weight: 300;
+                font-size: 14px;
+                color: #000;
+                padding: 17px 40px 17px 40px;
+            }
+        }
+    }
+    &_right{
+        &_shiping{
+            &_text{
+                font-weight: 300;
+                font-size: 16px;
+                color: #222;
+            }
+            &_input{
+                margin-top: 20px;
+                width: 360px;
+                padding: 13px 0 16px 17px;
+                font-size: 13px;
+                color: #222;
+                font-weight: 400;
+            }
+            &_button{
+                width: 101px;
+                height: 35px;
+                margin-top: 23px;
+                // padding: 10px 14px 12px 14px;
+                font-weight: 300;
+                font-size: 11px;
+                color: #4a4a4a;
+            }
+        }
+        &_total{
+            margin-top: 57px;
+            // width: 360px;
+            height: 214px;
+            background-color:#f5f3f3;
+            &_wrapper{
+            margin-bottom: 21px;
+            }
+            &_item{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding-top: 39px;
+                gap: 12px;
+                padding-right: 34px;
+                &_text{
+                    font-weight: 400;
+                    font-size: 11px;
+                    color: #4a4a4a;
+                    &_total{
+                        padding-left: 25px;
+                    }
+                }
+                &_subtitle{
+                    font-weight: 300;
+                    font-size: 16px;
+                    color: #222;
+                    &_check{
+                        font-weight: 700;
+                        color: #f16d7f;
+                        padding-right: 3px;
+                        padding-left: 21px;
+                    }
+                }
+            }    
+            &_line{
+                border: 1px solid #e2e2e2;;
+                margin-left: 42px;
+                margin-right: 42px;
+            }
+            &_button{
+                margin-left: 44px;
+                margin-top: 17px;
+                font-weight: 300;
+                font-size: 16px;
+                color:#fff;
+                background-color: #f16d7f;
+                padding: 15px 45px 15px 45px;
+                transition: .3s;
+                border: none;
+            }
+            &_button:hover{
+                background-color: purple;
+                color:#fff;
+                
+            }
+        }
+    }
 }
 
 summary {
@@ -471,10 +630,6 @@ summary {
                 }
             }
         }
-        
-        
-        
-        
     }
 
 
@@ -757,7 +912,6 @@ summary {
     &__vector__right{
         padding: 15px;
     }
-
 }
 
 
@@ -873,7 +1027,7 @@ summary {
         padding-bottom: 24px;
     }
     &_text {
-         color: rgb(251, 251, 251);
+        color: rgb(251, 251, 251);
         font-family: Lato;
         font-size: 16px;
         font-weight: 400;
@@ -1017,9 +1171,6 @@ summary {
 
         gap: 305px;
     }
-
-
-
 }
 
 @media(max-width:867px) {
@@ -1064,9 +1215,9 @@ summary {
 
     @media(max-width: 375px) {
 
-        .img_header_right_2_3 {
+    .img_header_right_2_3 {
             display: none;
-        }
+        }    
 
         .header_left {
             padding-left: 16px;
@@ -1075,8 +1226,6 @@ summary {
         .header_right {
             padding-right: 16px;
         }
-
-
 
         .top_content {
             background: #F1E4E6;
@@ -1144,6 +1293,7 @@ summary {
             text-align: center;
             border: 1px solid;
             padding: 15px 39px 14px 39px;
-
         }
     }
+       
+
