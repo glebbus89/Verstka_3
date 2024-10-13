@@ -66,29 +66,32 @@
                 <div class="registration_left">
                     <div class="registration_left_item">
                         <h2 class="registration_left_item_title">Your Name</h2>
-                        <input class="registration_left_item_input" type="text" required placeholder="First Name">
-                        <input class="registration_left_item_input" type="text" required placeholder="Last Name">
-                        <div class="registration_left_item_checkbox">
-                            <input class="registration_left_item_checkbox_check" type="checkbox">
-                            <label class="registration_left_item_checkbox_label" for="check">Male</label>
-                            <input class="registration_left_item_checkbox_check" type="checkbox">
-                            <label class="registration_left_item_checkbox_female" for="check">Female</label>
-                        </div>
-
+                        <form class="registration_left_item_form" action="#">
+                            <input class="registration_left_item_input" type="text" required placeholder="First Name">
+                            <input class="registration_left_item_input" type="text" required placeholder="Last Name">
+                            <div class="registration_left_item_checkbox">
+                                <input class="registration_left_item_checkbox_check" type="radio" id="Male" name="drone"
+                                    value="Male" checked />
+                                <labe class="registration_left_item_checkbox_label" for="Male">Male</labe>
+                                <input class="registration_left_item_checkbox_check" type="radio" id="Female"
+                                    name="drone" value="Female" checked />
+                                <label class="registration_left_item_checkbox_female" for="Female">Female</label>
+                            </div>
+                            <div class="registration_left_item_box">
+                                <h2 class="registration_left_details_title">Login details</h2>
+                                <input class="registration_left_details_input" type="email" required
+                                    placeholder="Email">
+                                <input class="registration_left_details_input" type="password" required
+                                    placeholder="Password">
+                                <p class="registration_left_details_text">Please use 8 or more characters, with at least
+                                    1
+                                    number and a mixture of uppercase and
+                                    lowercase letters</p>
+                                <button class="registration_left_button">JOIN NOW<img
+                                        src="./img/img_registration/button_join.svg" alt="button_join"></button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="registration_left_details">
-                        <h2 class="registration_left_details_title">Login details</h2>
-                        <input class="registration_left_details_input" type="email" required placeholder="Email">
-                        <input class="registration_left_details_input" type="password" required placeholder="Password">
-                        <p class="registration_left_details_text">Please use 8 or more characters, with at least 1
-                            number and a mixture of uppercase and
-                            lowercase letters</p>
-                    </div>
-                    <button class="registration_left_button">JOIN NOW<img src="./img/img_registration/button_join.svg"
-                            alt=""></button>
-
-
-
                 </div>
                 <div class="registretion_right">
                     <div class="registration_right_item">

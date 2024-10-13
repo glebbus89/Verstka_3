@@ -214,14 +214,21 @@ img {
 .shoping__cart_left_description_list_color {
   color: #6f6e6e;
 }
+.shoping__cart_left_description_list_quantity {
+  display: flex;
+  gap: 24px;
+  font-weight: 400;
+  font-size: 22px;
+  color: #575757;
+}
 .shoping__cart_left_description_list_input {
   color: #6f6e6e;
   font-weight: 400;
   font-size: 18px;
   width: 44px;
-  height: 24px;
+  height: 25px;
   text-align: center;
-  padding-left: 15px;
+  border: 1px solid #eaeaea;
 }
 .shoping__cart_left_delete {
   position: absolute;
@@ -230,6 +237,9 @@ img {
   background: none;
   cursor: pointer;
   border: none;
+}
+.shoping__cart_left_delete:hover path {
+  fill: red;
 }
 .shoping__cart_left_bottom_button {
   display: flex;
@@ -246,6 +256,10 @@ img {
   font-size: 16px;
   color: #222;
 }
+.shoping__cart_right_shiping_form {
+  display: flex;
+  flex-direction: column;
+}
 .shoping__cart_right_shiping_input {
   margin-top: 20px;
   width: 360px;
@@ -261,6 +275,12 @@ img {
   font-weight: 300;
   font-size: 11px;
   color: #4a4a4a;
+  border: 1px solid #A4A4A4;
+  background-color: #fff;
+}
+.shoping__cart_right_shiping_button:hover {
+  color: white;
+  background-color: #A4A4A4;
 }
 .shoping__cart_right_total {
   margin-top: 57px;
@@ -326,7 +346,6 @@ img {
 .registration_left_item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 34px;
 }
 .registration_left_item_title {
   font-weight: 300;
@@ -342,9 +361,8 @@ img {
   padding: 13px 0 16px 17px;
 }
 .registration_left_item_checkbox {
-  display: flex;
-  align-items: center;
   margin-top: 31px;
+  margin-bottom: 33px;
 }
 .registration_left_item_checkbox_check {
   width: 1.3em;
@@ -399,6 +417,7 @@ img {
   color: #b1b1b1;
 }
 .registration_left_button {
+  margin-top: 39px;
   display: flex;
   flex-direction: row;
   align-items: center;
