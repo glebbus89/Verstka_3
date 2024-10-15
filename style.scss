@@ -19,7 +19,7 @@ a {
     text-decoration: none;
 }
 
-img {
+regiright_2_3img {
     max-width: 100%;
 }
 
@@ -94,8 +94,28 @@ img {
         &:hover {
             color:$colorselectSite;
         }
-        
     }
+    &__cart{
+        display: flex;
+        align-items: center;
+        position: relative;
+        &_count{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 19px;
+            height: 19px;
+            font-size: 12px;
+            color:  #fff;
+            background-color:#f16d7f;;
+            border-radius: 100%;
+            position: absolute;
+            left: 22px;
+            bottom: 18px;
+        }
+
+    }
+
 }
 
 #check {
@@ -1564,6 +1584,9 @@ summary {
         .menu__link {
             display: none;
         }
+        .menu__cart{
+            display: none;
+        }
 
         .registration_left_item_input{
             width: 329px;
@@ -1699,9 +1722,24 @@ summary {
         .registration_left_details_input {
             width: 320px;
         }
+
+        
         .subscribe_wrapper {
             padding-bottom: 109px;
             gap:59px;
+        }
+
+        .subscribe_item{
+            background-image: url(./img/subscribe_mobile.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+
+        .subscribe_left_text{
+            font-size: 18px;
+            width: 338px;
         }
 
         .subscribe_right_border_item_text{
