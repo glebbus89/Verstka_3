@@ -165,6 +165,7 @@ regiright_2_3img {
     padding-bottom: 60px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     &_heading {
         color: $colorselectSite;
@@ -629,6 +630,11 @@ summary {
         align-items: center;
         padding-left: 16px;
     }
+    &__svg{
+        background-image:url(./img/Vector_sort_desktop.svg);
+        width: 15px;
+        height: 10px;
+        background-repeat: no-repeat;}
     &__heading{
         @include font(#000);
     }
@@ -925,12 +931,16 @@ summary {
     text-align: center;
 }
 
+.products_wrapper {
+    margin-top: 48px;
+    margin-bottom: 68px;
+}
+
 .products_box_content {
     display: grid;
     grid-template-columns: repeat(3, 360px);
     gap: 30px;
-    margin-top: 48px;
-    margin-bottom: 68px;
+    
 
 }
 
@@ -1327,8 +1337,7 @@ summary {
         grid-template-columns: repeat(2, 360px);
         gap: 16px;
         justify-content: center;
-        margin-top: 73px;
-        margin-bottom: 32px;
+        
     }
 
     .copyright_right_logo{
@@ -1345,9 +1354,15 @@ summary {
     }
 
     .top_head_left {
-        margin-left: 70px;
-        margin-right: 70px;
+        
+        padding-left: 32px;
     }
+
+    .top_head_breadcrumbs__ul {
+        padding-right: 20px;
+    }
+
+
     .registration{
         margin-left: 70px;
         margin-right: 70px;
@@ -1377,8 +1392,7 @@ summary {
         display: grid;
         grid-template-columns: repeat(2, 360px);
         gap: 30px;
-        margin-top: 48px;
-        margin-bottom: 68px;
+        
 
     }
 }
@@ -1429,8 +1443,7 @@ summary {
         grid-template-columns: repeat(2, 360px);
         gap: 16px;
         justify-content: center;
-        margin-top: 73px;
-        margin-bottom: 32px;
+        
     }
 
     .products_box_button {
@@ -1478,8 +1491,7 @@ summary {
         display: grid;
         grid-template-columns: repeat(2, 360px);
         gap: 16px;
-        margin-top: 73px;
-        margin-bottom: 32px;
+        
         
     }
 
@@ -1515,15 +1527,43 @@ summary {
         padding-bottom: 109px;
     }
 
-    .sort {
-        height: 0;
+    .top_head_left {
+        
+        padding-left: 10px;
     }
 
-    .products_content{
+    .top_head_breadcrumbs__ul {
+        padding-right: 16px;
+    }
+
+    .sort {
+        height: 0;
+        padding-top: 24px;
+        justify-content: space-between;
+    }
+
+    .filter {
+        padding-top: 0;
+    }
+
+    .filter__summary {
+        padding-left: 10px;
+    }
+
+    .sort__details {
+        padding-top: 0;
+        padding-right: 15px;
+    }
+
+
+
+    .products_wrapper{
         margin-right: 16px;
         margin-left: 16px;
         margin-top: 40px;
         margin-bottom: 40px;
+
+        
     }
 
     .products_box_content {
@@ -1542,10 +1582,10 @@ summary {
         padding-left: 278px;
     }
 
-    .top_head_left {
-        margin-left: 16px;
-        margin-right: 16px;
-    }
+    // .top_head_left {
+    //     margin-left: 16px;
+    //     margin-right: 16px;
+    // }
     .registration{
         margin-top: 40px;
         margin-bottom: 96px;
@@ -1640,9 +1680,16 @@ summary {
         .subscribe_right_border_item_text{
             width: 189px;
         }
+        
     }
 
-    
+    @media(max-width: 450px) {
+        .top_head{
+            gap:15px;
+            justify-content: center;
+        }
+
+    }
 
     @media(max-width: 425px) {
 
@@ -1651,6 +1698,12 @@ summary {
         }
         .menu__cart{
             display: none;
+        }
+
+        .top_head{
+            padding-bottom: 46px;
+            padding-top: 24px;
+            gap: 32px;
         }
 
         .registration_left_item_input{
@@ -1754,12 +1807,30 @@ summary {
             padding-bottom: 32px;
         }
 
+        .filter__heading{
+            display: none;
+        }
+
+        .filter__svg{
+                background-image:url(./img/Vector_sort_mobile.svg);
+                width: 37px;
+                height: 25px;
+                background-repeat: no-repeat;
+        }
+
+        .products_wrapper{
+            margin-right: 8px;
+            margin-left: 8px;
+            
+    
+            
+        }
+
         .products_box_content {
             display: grid;
             grid-template-columns: repeat(1, 359px);
             gap: 16px;
-            margin-top: 64px;
-            margin-bottom: 40px;
+            
         }
 
         .products_box_button {
@@ -1779,9 +1850,7 @@ summary {
 
         
 
-        .top_head{
-            justify-content: center;
-        }
+        
 
         .registration{
             margin-left: 8px;

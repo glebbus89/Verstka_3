@@ -153,6 +153,7 @@ regiright_2_3img {
   padding-bottom: 60px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 .top_head_heading {
@@ -554,6 +555,12 @@ summary::-webkit-details-marker {
   align-items: center;
   padding-left: 16px;
 }
+.filter__svg {
+  background-image: url(./img/Vector_sort_desktop.svg);
+  width: 15px;
+  height: 10px;
+  background-repeat: no-repeat;
+}
 .filter__heading {
   font-size: 14px;
   font-weight: 600;
@@ -811,12 +818,15 @@ summary::-webkit-details-marker {
   text-align: center;
 }
 
+.products_wrapper {
+  margin-top: 48px;
+  margin-bottom: 68px;
+}
+
 .products_box_content {
   display: grid;
   grid-template-columns: repeat(3, 360px);
   gap: 30px;
-  margin-top: 48px;
-  margin-bottom: 68px;
 }
 
 .products {
@@ -1160,8 +1170,6 @@ summary::-webkit-details-marker {
     grid-template-columns: repeat(2, 360px);
     gap: 16px;
     justify-content: center;
-    margin-top: 73px;
-    margin-bottom: 32px;
   }
   .copyright_right_logo {
     margin-right: 0px;
@@ -1173,8 +1181,10 @@ summary::-webkit-details-marker {
     padding-left: 32px;
   }
   .top_head_left {
-    margin-left: 70px;
-    margin-right: 70px;
+    padding-left: 32px;
+  }
+  .top_head_breadcrumbs__ul {
+    padding-right: 20px;
   }
   .registration {
     margin-left: 70px;
@@ -1194,8 +1204,6 @@ summary::-webkit-details-marker {
     display: grid;
     grid-template-columns: repeat(2, 360px);
     gap: 30px;
-    margin-top: 48px;
-    margin-bottom: 68px;
   }
 }
 @media (max-width: 1024px) {
@@ -1232,8 +1240,6 @@ summary::-webkit-details-marker {
     grid-template-columns: repeat(2, 360px);
     gap: 16px;
     justify-content: center;
-    margin-top: 73px;
-    margin-bottom: 32px;
   }
   .products_box_button {
     padding-left: 408px;
@@ -1258,8 +1264,6 @@ summary::-webkit-details-marker {
     display: grid;
     grid-template-columns: repeat(2, 360px);
     gap: 16px;
-    margin-top: 73px;
-    margin-bottom: 32px;
   }
   .registration_right_item_title {
     font-size: 15px;
@@ -1285,10 +1289,28 @@ summary::-webkit-details-marker {
     padding-right: 16px;
     padding-bottom: 109px;
   }
+  .top_head_left {
+    padding-left: 10px;
+  }
+  .top_head_breadcrumbs__ul {
+    padding-right: 16px;
+  }
   .sort {
     height: 0;
+    padding-top: 24px;
+    justify-content: space-between;
   }
-  .products_content {
+  .filter {
+    padding-top: 0;
+  }
+  .filter__summary {
+    padding-left: 10px;
+  }
+  .sort__details {
+    padding-top: 0;
+    padding-right: 15px;
+  }
+  .products_wrapper {
     margin-right: 16px;
     margin-left: 16px;
     margin-top: 40px;
@@ -1304,10 +1326,6 @@ summary::-webkit-details-marker {
   }
   .products_box_button {
     padding-left: 278px;
-  }
-  .top_head_left {
-    margin-left: 16px;
-    margin-right: 16px;
   }
   .registration {
     margin-top: 40px;
@@ -1382,12 +1400,23 @@ summary::-webkit-details-marker {
     width: 189px;
   }
 }
+@media (max-width: 450px) {
+  .top_head {
+    gap: 15px;
+    justify-content: center;
+  }
+}
 @media (max-width: 425px) {
   .menu__link {
     display: none;
   }
   .menu__cart {
     display: none;
+  }
+  .top_head {
+    padding-bottom: 46px;
+    padding-top: 24px;
+    gap: 32px;
   }
   .registration_left_item_input {
     width: 329px;
@@ -1466,12 +1495,23 @@ summary::-webkit-details-marker {
   .content_item {
     padding-bottom: 32px;
   }
+  .filter__heading {
+    display: none;
+  }
+  .filter__svg {
+    background-image: url(./img/Vector_sort_mobile.svg);
+    width: 37px;
+    height: 25px;
+    background-repeat: no-repeat;
+  }
+  .products_wrapper {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
   .products_box_content {
     display: grid;
     grid-template-columns: repeat(1, 359px);
     gap: 16px;
-    margin-top: 64px;
-    margin-bottom: 40px;
   }
   .products_box_button {
     padding-left: 89px;
@@ -1485,9 +1525,6 @@ summary::-webkit-details-marker {
     text-align: center;
     border: 1px solid;
     padding: 15px 39px 14px 39px;
-  }
-  .top_head {
-    justify-content: center;
   }
   .registration {
     margin-left: 8px;
