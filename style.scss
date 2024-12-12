@@ -51,6 +51,7 @@ a {
     }
 }
 .menu {
+    z-index: 2;
     width: 232px;
     position: absolute;
     top: 75px;
@@ -58,7 +59,6 @@ a {
     padding: 32px;
     box-sizing:border-box;
     transition: right 0.3s;
-    
     box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
     background: rgb(255, 255, 255);
     &__heading{
@@ -674,6 +674,7 @@ summary {
 
 .details{
     position: relative;
+    z-index: 1;
     &__title {
         color:$colorselectItems;
         font-size: 14px;
@@ -808,6 +809,7 @@ summary {
                 padding-top: 65px;
                 gap: 23px;
                 &__details {
+                    
                     &__title{
                         color: $colorselectItems;
                         font-size: 14px;
@@ -1883,6 +1885,10 @@ summary {
         font-size: 20px;
         }
 
+        .sort {
+            gap: 0;
+        }
+
         .shoping__cart_left_bottom_button_click{
             padding: 9px 17px 9px 17px;
             font-size: 12px;
@@ -1897,7 +1903,7 @@ summary {
 
     @media(max-width: 425px) {
 
-        .menu__link {
+        .menu__link_registration {
             display: none;
         }
         .menu__cart{
@@ -1949,14 +1955,7 @@ summary {
             padding-bottom: 64px;
         }
 
-        .registration_left_item_input{
-            width: 329px;
-        }
-
-        .registration_left_details_input {
-            width: 329px;
-        }
-
+        
         .pagination{
             padding-bottom: 64px;
             padding-left: 45px;
@@ -2007,6 +2006,49 @@ summary {
 
     }
 
+ @media(max-width: 424px) {
+    
+    .registration_left_item_input{
+        width: 350px;
+    }
+
+    .registration_left_details_input {
+        width: 350px;
+    }
+ }
+
+ @media(max-width: 410px) {
+    
+    .registration_left_item_input{
+        width: 340px;
+    }
+
+    .registration_left_details_input {
+        width: 340px;
+    }
+ }
+
+ @media(max-width: 398px) {
+    
+    .registration_left_item_input{
+        width: 330px;
+    }
+
+    .registration_left_details_input {
+        width: 330px;
+    }
+ }
+
+ @media(max-width: 389px) {
+    
+    .registration_left_item_input{
+        width: 322px;
+    }
+
+    .registration_left_details_input {
+        width: 322px;
+    }
+ }
 
     // Мобильная версия
 
@@ -2015,10 +2057,6 @@ summary {
         .header{
             padding-right: 16px;
             padding-left: 16px;
-        }
-
-        .menu__link {
-            display: none;
         }
 
         .top_content {
@@ -2067,6 +2105,21 @@ summary {
         .content_item {
             padding-bottom: 32px;
         }
+
+        .sort__details {
+            gap: 10px;
+        }
+
+        .details__title {
+            
+            gap: 7px;
+            font-size: 10px;
+        }
+
+        .filter {
+            width: 140px;
+        }
+
 
         .filter__heading{
             display: none;

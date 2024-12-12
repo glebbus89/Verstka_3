@@ -44,6 +44,7 @@ a {
 }
 
 .menu {
+  z-index: 2;
   width: 232px;
   position: absolute;
   top: 75px;
@@ -602,6 +603,7 @@ summary::-webkit-details-marker {
 
 .details {
   position: relative;
+  z-index: 1;
 }
 .details__title {
   color: rgb(111, 110, 110);
@@ -1588,6 +1590,9 @@ summary::-webkit-details-marker {
   .top_content_subtitle {
     font-size: 20px;
   }
+  .sort {
+    gap: 0;
+  }
   .shoping__cart_left_bottom_button_click {
     padding: 9px 17px 9px 17px;
     font-size: 12px;
@@ -1598,7 +1603,7 @@ summary::-webkit-details-marker {
   }
 }
 @media (max-width: 425px) {
-  .menu__link {
+  .menu__link_registration {
     display: none;
   }
   .menu__cart {
@@ -1639,12 +1644,6 @@ summary::-webkit-details-marker {
     display: block;
     padding-top: 64px;
     padding-bottom: 64px;
-  }
-  .registration_left_item_input {
-    width: 329px;
-  }
-  .registration_left_details_input {
-    width: 329px;
   }
   .pagination {
     padding-bottom: 64px;
@@ -1687,13 +1686,42 @@ summary::-webkit-details-marker {
     padding-top: 43px;
   }
 }
+@media (max-width: 424px) {
+  .registration_left_item_input {
+    width: 350px;
+  }
+  .registration_left_details_input {
+    width: 350px;
+  }
+}
+@media (max-width: 410px) {
+  .registration_left_item_input {
+    width: 340px;
+  }
+  .registration_left_details_input {
+    width: 340px;
+  }
+}
+@media (max-width: 398px) {
+  .registration_left_item_input {
+    width: 330px;
+  }
+  .registration_left_details_input {
+    width: 330px;
+  }
+}
+@media (max-width: 389px) {
+  .registration_left_item_input {
+    width: 322px;
+  }
+  .registration_left_details_input {
+    width: 322px;
+  }
+}
 @media (max-width: 375px) {
   .header {
     padding-right: 16px;
     padding-left: 16px;
-  }
-  .menu__link {
-    display: none;
   }
   .top_content {
     background: #F1E4E6;
@@ -1731,6 +1759,16 @@ summary::-webkit-details-marker {
   }
   .content_item {
     padding-bottom: 32px;
+  }
+  .sort__details {
+    gap: 10px;
+  }
+  .details__title {
+    gap: 7px;
+    font-size: 10px;
+  }
+  .filter {
+    width: 140px;
   }
   .filter__heading {
     display: none;
